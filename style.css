@@ -9,6 +9,7 @@ body {
 #wrapper {
     background: radial-gradient(389.69% 128% at 48.22% 0%, #34091E 0%, rgba(30, 7, 18, 0) 100%);
     display: flex;
+    height: 900px;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
@@ -41,10 +42,11 @@ header {
 }
 
 .text {
-    font-family: 'Gill Sans MT';
+    font-family: 'Open Sans';
     text-align: center;
     color: #FFFFFF;
     display: flex;
+    font-weight: 600;
 }
 
 .btn:hover {
@@ -54,7 +56,7 @@ header {
 
 .btn {
     color: black;
-    font-family: 'Inter';
+    font-family: 'Open Sans';
     border-width: 1px;
     border-style: solid;
     border-color:#DA9D46;
@@ -63,6 +65,7 @@ header {
     text-align: center;
     display: block;
     letter-spacing: 0em;
+    font-weight: 500;
 }
 
 a {
@@ -100,19 +103,18 @@ footer {
     background-image: url(images/6eec585fd73224e9c70951d482f4761a.png);
 }
 
-.line {
+/*.line {
     width: 100%;
     height: 15px;
     background-color:#FFF8ED;
     display: flex;
     margin: 0 auto;
     box-shadow: 1px 1px 0 #4A2F07 inset, -1px -1px 0 #4A2F07 inset;
-}
+}*/
 
-@media only screen and (min-width: 280px) {
+@media only screen and (min-width: 1px) {
     #wrapper {
         max-width: 278px;
-        height: 600px;
         padding: 5px 0;
         margin-top: 0;
     }
@@ -136,7 +138,6 @@ footer {
         margin-top: -12px;
         margin-bottom: 17px;
         font-size: 12px;
-        font-weight: 400;
         line-height: 15px;
     }
 
@@ -145,7 +146,6 @@ footer {
         padding: 14px 0;
         margin-bottom: 14px;
         font-size: 17px;
-        font-weight: 400;
         line-height: 23px;
     }
 
@@ -172,7 +172,6 @@ footer {
 @media only screen and (min-width: 360px) {
     #wrapper {
         max-width: 358px;
-        height: 600px;
         padding: 10px 0;
         margin-top: 0;
     }
@@ -196,7 +195,6 @@ footer {
         margin-top: -12px;
         margin-bottom: 17px;
         font-size: 12px;
-        font-weight: 400;
         line-height: 15px;
     }
 
@@ -205,7 +203,6 @@ footer {
         padding: 14px 0;
         margin-bottom: 14px;
         font-size: 17px;
-        font-weight: 400;
         line-height: 23px;
     }
 
@@ -232,7 +229,6 @@ footer {
 @media only screen and (min-width: 480px) {
     #wrapper {
         max-width: 478px;
-        height: 700px;
         padding: 15px 0;
         margin-top: 0;
     }
@@ -256,7 +252,6 @@ footer {
         margin-top: -6px;
         margin-bottom: 25px;
         font-size: 15px;
-        font-weight: 400;
         line-height: 18px;
     }
 
@@ -265,7 +260,6 @@ footer {
         padding: 16px 0;
         margin-bottom: 14px;
         font-size: 18px;
-        font-weight: 400;
         line-height: 23px;
     }
 
@@ -291,10 +285,9 @@ footer {
 
 @media only screen and (min-width: 535px) {
     #wrapper {
-            width: 535px;
-            height: 900px;
-            padding: 61px 0;
-            margin-top: -8px;
+        width: 535px;
+        padding: 61px 0;
+        margin-top: -8px;
     }
 
     .container {
@@ -314,8 +307,8 @@ footer {
         width: 384px;
         margin-top: -65px;
         margin-bottom: 30px;
-        line-height: 16.24px;
-        font-size: 14px;
+        line-height: 23px;
+        font-size: 18px;
     }
 
     .btn {
@@ -323,7 +316,6 @@ footer {
         padding: 17px 0;
         margin-bottom: 16px;
         font-size: 20px;
-        font-weight: 400;
         line-height: 24px;
     }
 
