@@ -60,7 +60,7 @@ header {
     border-width: 1px;
     border-style: solid;
     border-color:#DA9D46;
-    background-color:#fff8ed;
+    background-color:#FFFFFF;
     border-radius: 100px;
     text-align: center;
     display: block;
@@ -308,7 +308,7 @@ footer {
         margin-top: -65px;
         margin-bottom: 30px;
         line-height: 23px;
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .btn {
