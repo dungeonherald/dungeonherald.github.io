@@ -27,7 +27,7 @@ header {
 }
 
 .container {
-    background-image: url(images/8237e226730d72a2d1565ad7b80d7991.png);
+    background-image: url(images/dnd-dungeonherald.png);
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -79,28 +79,28 @@ footer {
 }
 
 .fb:hover {
-    background-image: url(images/058673f45ae770797525bbc1809f72ab.png);
+    background-image: url(images/Facebook-dungeonherald-dark.png);
 }
 
 .fb {
-    background-image: url(images/b5339c8ae02ad582a99d0de2f47b6f99.png);
+    background-image: url(images/Facebook-dungeonherald.png);
 }
 
 .inst:hover {
-    background-image: url(images/b910307cf41cb52670f0a8ca7712bd07.png);
+    background-image: url(images/Instagram-dungeonherald-dark.png);
 }
 
 .inst {
-    background-image: url(images/0fd15c371d5e91209b45b03de2fb2ce7.png);
+    background-image: url(images/Instagram-dungeonherald.png);
 }
 
 
 .spot:hover {
-    background-image: url(images/afa4c98b7b1f8bdb77586089b6ee2574.png);
+    background-image: url(images/Spotify-podcast-dungeonherald-dark.png);
 }
 
 .spot {
-    background-image: url(images/6eec585fd73224e9c70951d482f4761a.png);
+    background-image: url(images/Spotify-podcast-dungeonherald.png);
 }
 
 /*.line {
