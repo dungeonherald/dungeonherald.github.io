@@ -1,10 +1,10 @@
+html, body {
+    height: 100%;
+}
+
 body {
     background: #17091f;
-    display: flex;
     margin: 0 auto;
-    flex-direction: column;
-    width: 100%;
-    overflow: auto;
 }
 
 #wrapper {
@@ -15,9 +15,10 @@ body {
     align-items: center;
     margin: 0 auto;
     box-shadow: 0px 0px 25px 12px rgba(0, 0, 0, 0.25);
+    min-height: 100%;
 }
 
-header {
+.header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,14 +67,14 @@ a {
     text-decoration: none;
 }
 
-main {
+.main {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin: 0 auto;
 }
 
-footer {
+.footer {
     display: inline-flex;
     align-items: center;
     margin: 0 auto;
@@ -105,22 +106,14 @@ footer {
 }
 
 @media only screen and (min-width: 1px) {
-    body {
-        height: 900px;
-    }
-
     #wrapper {
         width: 260px;
-        padding: 5px 0;
-        margin-top: 0;
-        height: 900px;
     }
-
 
     .logo {
         height: 90px;
         width: 90px;
-        margin-top: 8px;
+        margin-top: 20px;
     }
 
     .logo2 {
@@ -163,27 +156,21 @@ footer {
     .fb:hover {
         background-size: 40px;
     }
-    footer {
+
+    .footer {
         margin-bottom: 20px;
     }
 }
 
 @media only screen and (min-width: 360px) {
-    body {
-        height: 950px;
-    }
-
     #wrapper {
         width: 320px;
-        padding: 10px 0;
-        margin-top: 0;
-        height: 950px;
     }
 
     .logo {
         height: 90px;
         width: 90px;
-        margin-top: 8px;
+        margin-top: 25px;
     }
 
     .logo2 {
@@ -228,19 +215,20 @@ footer {
         background-size: 40px;
     }
 
+    .footer {
+        margin-bottom: 25px;
+    }
 }
 
 @media only screen and (min-width: 480px) {
     #wrapper {
         width: 450px;
-        padding: 15px 0;
-        margin-top: 0;
     }
 
     .logo {
         height: 130px;
         width: 130px;
-        margin-top: 10px;
+        margin-top: 30px;
     }
 
     .logo2 {
@@ -284,20 +272,20 @@ footer {
         background-size: 50px;
     }
 
+    .footer {
+        margin-bottom: 30px;
+    }
 }
 
 @media only screen and (min-width: 535px) {
-
-
     #wrapper {
         width: 535px;
-        padding: 61px 0;
-        margin-top: -20px;
     }
 
     .logo {
         height: 145px;
         width: 145px;
+        margin-top: 40px;
     }
 
     .logo2 {
@@ -340,24 +328,8 @@ footer {
     .fb:hover {
         background-size: 58px;
     }
-}
 
-@media only screen and (min-width: 700px) {
-    body {
-        height: 1200px;
-    }
-
-    #wrapper {
-        height: 1200px;
-    }
-}
-
-@media only screen and (min-width: 900px) {
-    body {
-        height: 1400px;
-    }
-
-    #wrapper {
-        height: 1400px;
+    .footer {
+        margin-bottom: 40px;
     }
 }
