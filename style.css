@@ -8,6 +8,7 @@ body {
     margin: 0 auto;
     flex-direction: column;
     width: 100%;
+    overflow: auto;
 }
 
 #wrapper {
