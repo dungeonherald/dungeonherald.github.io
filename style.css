@@ -1,5 +1,9 @@
+html, body {
+    height: 100%;
+}
+
 body {
-    background-color:#14050F;
+    background: #17091f;
     display: flex;
     margin: 0 auto;
     flex-direction: column;
@@ -7,15 +11,12 @@ body {
 }
 
 #wrapper {
-    background: radial-gradient(389.69% 128% at 48.22% 0%, #34091E 0%, rgba(30, 7, 18, 0) 100%);
+    background-image: url(images/background.png);
+    background-size: cover;
     display: flex;
-    height: 900px;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    border-width: 0 1px;
-    border-style: solid;
-    border-color: #4A2F07;
     box-shadow: 0px 0px 25px 12px rgba(0, 0, 0, 0.25);
 }
 
@@ -26,18 +27,12 @@ header {
     margin: 0 auto;
 }
 
-.container {
-    background-image: url(images/dnd-dungeonherald.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.logo {
+    border-radius: 0px;
     margin: 0 auto;
 }
 
-.logo {
-    border-radius: 0px;
+.logo2 {
     margin: 0 auto;
 }
 
@@ -50,26 +45,35 @@ header {
 }
 
 .btn:hover {
-    background-color:#1E0712;
+    background: linear-gradient(to top, #4A34A3, 50%, #63169F);
     color: #FFF8ED;
+    outline: 1px solid black;
+    outline-offset: -3px; 
 }
 
 .btn {
+    border: 2px solid;
+    border-color : #F2D398;
     color: black;
     font-family: 'Open Sans';
-    border-width: 1px;
-    border-style: solid;
-    border-color:#DA9D46;
     background-color:#FFFFFF;
     border-radius: 100px;
     text-align: center;
     display: block;
     letter-spacing: 0em;
     font-weight: 500;
+
 }
 
 a {
     text-decoration: none;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
 footer {
@@ -103,28 +107,14 @@ footer {
     background-image: url(images/Spotify-podcast-dungeonherald.png);
 }
 
-/*.line {
-    width: 100%;
-    height: 15px;
-    background-color:#FFF8ED;
-    display: flex;
-    margin: 0 auto;
-    box-shadow: 1px 1px 0 #4A2F07 inset, -1px -1px 0 #4A2F07 inset;
-}*/
-
 @media only screen and (min-width: 1px) {
     #wrapper {
-        max-width: 278px;
+        width: 260px;
         padding: 5px 0;
         margin-top: 0;
+        min-height: 100%;
     }
 
-    .container {
-        width: 280px;
-        height: 100px;
-        margin-top: -15px;
-        background-size: 600px;
-    }
 
     .logo {
         height: 90px;
@@ -132,18 +122,23 @@ footer {
         margin-top: 8px;
     }
 
+    .logo2 {
+        width: 200px;
+        margin-top: 10px;
+    }
+
     .text {
         height: 30px;
-        width: 284px;
-        margin-top: -12px;
+        width: 200px;
         margin-bottom: 17px;
-        font-size: 12px;
+        font-size: 9px;
         line-height: 15px;
+        margin-top: -1px;
     }
 
     .btn {
-        width: 240px;
-        padding: 14px 0;
+        width: 200px;
+        padding: 10px 0;
         margin-bottom: 14px;
         font-size: 17px;
         line-height: 23px;
@@ -166,27 +161,28 @@ footer {
     .inst:hover,
     .fb:hover {
         background-size: 40px;
+    }
+    footer {
+        margin-bottom: 20px;
     }
 }
 
 @media only screen and (min-width: 360px) {
     #wrapper {
-        max-width: 358px;
+        width: 320px;
         padding: 10px 0;
         margin-top: 0;
-    }
-
-    .container {
-        width: 360px;
-        height: 100px;
-        margin-top: -15px;
-        background-size: 670px;
     }
 
     .logo {
         height: 90px;
         width: 90px;
         margin-top: 8px;
+    }
+
+    .logo2 {
+        width: 250px;
+        margin-top: 10px;
     }
 
     .text {
@@ -196,10 +192,11 @@ footer {
         margin-bottom: 17px;
         font-size: 12px;
         line-height: 15px;
+        margin-top: 1px;
     }
 
     .btn {
-        width: 255px;
+        width: 250px;
         padding: 14px 0;
         margin-bottom: 14px;
         font-size: 17px;
@@ -224,20 +221,14 @@ footer {
     .fb:hover {
         background-size: 40px;
     }
+
 }
 
 @media only screen and (min-width: 480px) {
     #wrapper {
-        max-width: 478px;
+        width: 450px;
         padding: 15px 0;
         margin-top: 0;
-    }
-
-    .container {
-        width: 480px;
-        height: 100px;
-        margin-top: -6px;
-        background-size: 900px;
     }
 
     .logo {
@@ -246,17 +237,22 @@ footer {
         margin-top: 10px;
     }
 
+    .logo2 {
+        width: 350px;
+        margin-top: 10px;
+    }
+
     .text {
-        height: 30px;
-        width: 360px;
-        margin-top: -6px;
+        height: 50px;
+        width: 350px;
         margin-bottom: 25px;
         font-size: 15px;
         line-height: 18px;
+        margin-top: 1px;
     }
 
     .btn {
-        width: 345px;
+        width: 350px;
         padding: 16px 0;
         margin-bottom: 14px;
         font-size: 18px;
@@ -281,20 +277,14 @@ footer {
     .fb:hover {
         background-size: 50px;
     }
+
 }
 
 @media only screen and (min-width: 535px) {
     #wrapper {
         width: 535px;
         padding: 61px 0;
-        margin-top: -8px;
-    }
-
-    .container {
-        background-size: 900px;
-        height: 245px;
-        width: 472px;
-        margin-top: -70px;
+        margin-top: -20px;
     }
 
     .logo {
@@ -302,13 +292,18 @@ footer {
         width: 145px;
     }
 
+    .logo2 {
+        width: 352px;
+        margin-top: 20px;
+    }
+
     .text {
         height: 50px;
         width: 384px;
-        margin-top: -65px;
         margin-bottom: 30px;
         line-height: 23px;
         font-size: 15px;
+        margin-top: 1px;
     }
 
     .btn {
@@ -336,5 +331,11 @@ footer {
     .inst:hover,
     .fb:hover {
         background-size: 58px;
+    }
+}
+
+@media only screen and (min-width: 999px) {
+    #wrapper {
+        min-height: auto;
     }
 }
